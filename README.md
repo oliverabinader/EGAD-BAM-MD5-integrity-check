@@ -1,0 +1,1 @@
+# EGAD-BAM-MD5-integrity-check
