@@ -11,7 +11,7 @@ OUTPUT_FILE="$BASE_DIR/results/md5_check_results.txt"
 mkdir -p results
 > "$OUTPUT_FILE"
 
-for folder in "$BASE_DIR"/data/Folder*; do
+for folder in "$BASE_DIR"/data/EGAF*; do
     if [ -d "$folder" ]; then
 
         stable_id=$(basename "$folder")
