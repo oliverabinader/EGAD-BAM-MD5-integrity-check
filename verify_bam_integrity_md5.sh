@@ -5,13 +5,13 @@ set -e
 echo "Starting MD5 validation..."
 
 BASE_DIR="$(pwd)"
-CSV_FILE="$BASE_DIR/data/EGAD00001003600-checksums_unique_lines.csv"
+CSV_FILE="$BASE_DIR/data/dataset-checksums.csv"
 OUTPUT_FILE="$BASE_DIR/results/md5_check_results.txt"
 
 mkdir -p results
 > "$OUTPUT_FILE"
 
-for folder in "$BASE_DIR"/data/EGAF*; do
+for folder in "$BASE_DIR"/data/Folder*; do
     if [ -d "$folder" ]; then
 
         stable_id=$(basename "$folder")
