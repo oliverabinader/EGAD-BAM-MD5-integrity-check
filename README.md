@@ -11,17 +11,16 @@ The workflow compares:
 ## Dataset Description
 
 Each sample is stored as a directory: as an example,
-EGAF00001724475/
-EGAF00001724476/
-EGAF00001724477/
-EGAF00001724478/
+- EGAF00001724475/
+- EGAF00001724476/
+- EGAF00001724477/
+- EGAF00001724478/
 
 Each sample contains:
 - `.bam` file (alignment file)
 - `.bam.md5` file (locally provided checksum)
 
-A metadata file is also provided to the use, and it expected MD5 checksums:
-checksums_unique_lines.csv
+A metadata file is also provided to the use, and it expected MD5 checksums: checksums_unique_lines.csv
 
 ## Pipeline Description
 
@@ -36,7 +35,7 @@ The script performs:
 ## Usage
 
 Run the script from the root directory:
-bash verify_bam_integrity_md5.sh
+- bash verify_bam_integrity_md5.sh
 
 ## Output
 Results are stored in md5_check_results.txt file.
