@@ -20,7 +20,7 @@ Each sample contains:
 - `.bam` file (alignment file)
 - `.bam.md5` file (locally provided checksum)
 
-A metadata file is also provided to the use, and it expected MD5 checksums: checksums_unique_lines.csv
+A metadata file is also provided to the user, which contains the expected MD5 checksums: checksums_unique_lines.csv
 
 ## Pipeline Description
 
