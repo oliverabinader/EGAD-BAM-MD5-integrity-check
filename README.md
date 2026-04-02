@@ -11,9 +11,10 @@ The workflow compares:
 ## Dataset Description
 
 Each sample is stored as a directory: as an example,
-Folder1/
-Folder2/
-Folder3/
+EGAF00001724475/
+EGAF00001724476/
+EGAF00001724477/
+EGAF00001724478/
 
 Each sample contains:
 - `.bam` file (alignment file)
@@ -25,7 +26,7 @@ checksums_unique_lines.csv
 ## Pipeline Description
 
 The script performs:
-1. Iterates through all `Folder*` directories  
+1. Iterates through all `EGAF*` directories  
 2. Extracts sample ID from folder name  
 3. Retrieves expected MD5 from CSV file  
 4. Reads computed MD5 from `.bam.md5` file  
@@ -35,7 +36,7 @@ The script performs:
 ## Usage
 
 Run the script from the root directory:
-bash check_md5.sh
+bash verify_bam_integrity_md5.sh
 
 ## Output
 Results are stored in md5_check_results.txt file.
